@@ -54,7 +54,7 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 Electronic device management, warranty lifecycle
 
-##Conclusion
+## Conclusion
 
 Blockchain technology offers a breakthrough solution to the problem of supply chain transparency. Instead of relying on trust between parties, the system will be built on immutable records, allowing verification and auditing at any time.
 
