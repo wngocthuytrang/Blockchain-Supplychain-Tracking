@@ -10,13 +10,13 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 ***1. Problems in traditional supply chains***
 
-"• Counterfeit goods penetrate the market easily.
-
-• Manual, outdated inspection process.
-
-• Lack of clear ownership verification tools.
-
-• Data is fragmented among many intermediaries."
+  • Counterfeit goods penetrate the market easily.
+  
+  • Manual, outdated inspection process.
+  
+  • Lack of clear ownership verification tools.
+  
+  • Data is fragmented among many intermediaries.
 
 ***2. Blockchain solution principles***
 
@@ -38,7 +38,7 @@ Product inspection tool using QR code
 
 Easy integration with ERP, IoT sensors
 
-###6. Technology and Tools
+***6. Technology and Tools***
 
 Solidity, Ethereum, Web3.js/Ethers.js
 
@@ -46,7 +46,7 @@ React, IPFS, QR Code API
 
 Truffle or Hardhat for contract compilation and deployment
 
-###7. Other application areas
+***7. Other application areas***
 
 Vaccine and medical drug tracking
 
