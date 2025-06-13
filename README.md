@@ -1,109 +1,70 @@
-# Blockchain in Supply Chain Transparency
+# Getting Started with Create React App
 
-## Introduction
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the era of globalization, supply chains play a pivotal role in the transportation of goods between countries and regions. However, traditional supply chain systems are facing many problems such as counterfeiting, lack of transparency, and lack of traceability. This is especially serious in industries such as healthcare, food, and fashion.
+## Available Scripts
 
-Blockchain – a distributed ledger technology, with immutable and transparent characteristics – has become a promising solution to solve the above problems. By recording every event in the product transportation process on the blockchain, stakeholders can verify the entire history of a product, from the place of production to the consumer.
+In the project directory, you can run:
 
-## Contents
+### `npm start`
 
-***1. Problems in traditional supply chains***
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-&emsp;• Counterfeit goods penetrate the market easily.
-  
-&emsp;• Manual, outdated inspection process.
-  
-&emsp;• Lack of clear ownership verification tools.
-  
-&emsp;• Data is fragmented among many intermediaries.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-***2. Blockchain solution principles***
+### `npm test`
 
-&emsp;• Each product is associated with a unique ID.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-&emsp;• All activities (creation, movement, transfer, status change) are recorded as events.
+### `npm run build`
 
-&emsp;• Records are stored on the blockchain, public and immutable.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-***3. Solution architecture***
-![bfcdeaed-2123-43a6-abca-46a363ca8b8a](https://github.com/user-attachments/assets/6374ed2f-fb51-4348-bd08-c71a3b7176e2)
-***4. Smart contract code (Solidity)***
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-contract SupplyChain {
-    struct Product {
-        uint id;
-        string name;
-        string location;
-        string status;
-        address owner;
-    }
+### `npm run eject`
 
-    uint public productCount;
-    mapping(uint => Product) public products;
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-    event ProductAdded(uint id, string name, address indexed owner);
-    event ProductUpdated(uint id, string location, string status, address indexed newOwner);
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-    function addProduct(string memory name, string memory location) public {
-        productCount++;
-        products[productCount] = Product(productCount, name, location, "Created", msg.sender);
-        emit ProductAdded(productCount, name, msg.sender);
-    }
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-    function updateProduct(uint id, string memory newLocation, string memory newStatus, address newOwner) public {
-        require(id > 0 && id <= productCount, "ID sản phẩm không hợp lệ");
-        Product storage product = products[id];
-        require(msg.sender == product.owner, "Chỉ chủ sở hữu hiện tại mới được cập nhật");
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-        product.location = newLocation;
-        product.status = newStatus;
-        product.owner = newOwner;
+## Learn More
 
-        emit ProductUpdated(id, newLocation, newStatus, newOwner);
-    }
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-    function getProduct(uint id) public view returns (Product memory) {
-        require(id > 0 && id <= productCount, "ID sản phẩm không hợp lệ");
-        return products[id];
-    }
-}
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-***5. User Interface and Practical Applications***
+### Code Splitting
 
-&emsp;• Product Management Page (Portal)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-&emsp;• Map displaying the journey (Map)
+### Analyzing the Bundle Size
 
-&emsp;• Product inspection tool using QR code
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-&emsp;• Easy integration with ERP, IoT sensors
+### Making a Progressive Web App
 
-***6. Technology and Tools***
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-&emsp;• Solidity, Ethereum, Web3.js/Ethers.js
+### Advanced Configuration
 
-&emsp;• React, IPFS, QR Code API
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-&emsp;• Truffle or Hardhat for contract compilation and deployment
+### Deployment
 
-***7. Other application areas***
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-&emsp;• Vaccine and medical drug tracking
+### `npm run build` fails to minify
 
-&emsp;• Branded product authentication, high-end products
-
-Electronic device management, warranty lifecycle
-
-## Conclusion
-
-Blockchain technology offers a breakthrough solution to the problem of supply chain transparency. Instead of relying on trust between parties, the system will be built on immutable records, allowing verification and auditing at any time.
-
-The proposed solution is not only suitable for sensitive industries such as pharmaceuticals and food, but can also be expanded to any field that needs to control the origin of products. The application of smart contracts helps automate and save operating costs, while improving the consumer experience.
-
-Personally, I believe that blockchain will soon become the new standard for supply chain management. Enterprises that are at the forefront of application will not only increase their reputation but also build a transparent, sustainable and competitive ecosystem in the digital age.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
