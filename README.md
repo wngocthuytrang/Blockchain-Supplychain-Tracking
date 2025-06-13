@@ -29,7 +29,8 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 ***3. Solution architecture***
 ***4. Smart contract code (Solidity)***
 
-print(// SPDX-License-Identifier: MIT
+```solidity
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract SupplyChain {
@@ -69,7 +70,8 @@ contract SupplyChain {
         require(id > 0 && id <= productCount, "ID sản phẩm không hợp lệ");
         return products[id];
     }
-})
+}
+```
 
 ***5. User Interface and Practical Applications***
 
