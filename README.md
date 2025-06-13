@@ -28,6 +28,47 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 ***3. Solution architecture***
 ***4. Smart contract code (Solidity)***
+`// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SupplyChain {
+    struct Product {
+        uint id;
+        string name;
+        string location;
+        string status;
+        address owner;
+    }
+
+    uint public productCount;
+    mapping(uint => Product) public products;
+
+    event ProductAdded(uint id, string name, address indexed owner);
+    event ProductUpdated(uint id, string location, string status, address indexed newOwner);
+
+    function addProduct(string memory name, string memory location) public {
+        productCount++;
+        products[productCount] = Product(productCount, name, location, "Created", msg.sender);
+        emit ProductAdded(productCount, name, msg.sender);
+    }
+
+    function updateProduct(uint id, string memory newLocation, string memory newStatus, address newOwner) public {
+        require(id > 0 && id <= productCount, "ID sản phẩm không hợp lệ");
+        Product storage product = products[id];
+        require(msg.sender == product.owner, "Chỉ chủ sở hữu hiện tại mới được cập nhật");
+
+        product.location = newLocation;
+        product.status = newStatus;
+        product.owner = newOwner;
+
+        emit ProductUpdated(id, newLocation, newStatus, newOwner);
+    }
+
+    function getProduct(uint id) public view returns (Product memory) {
+        require(id > 0 && id <= productCount, "ID sản phẩm không hợp lệ");
+        return products[id];
+    }
+}`
 ***5. User Interface and Practical Applications***
 
 &emsp;• Product Management Page (Portal)
