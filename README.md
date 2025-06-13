@@ -8,17 +8,17 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 ## Contents
 
-###1. Problems in traditional supply chains
+***1. Problems in traditional supply chains***
 
-Counterfeit goods penetrate the market easily.
+"• Counterfeit goods penetrate the market easily.
 
-Manual, outdated inspection process.
+• Manual, outdated inspection process.
 
-Lack of clear ownership verification tools.
+• Lack of clear ownership verification tools.
 
-Data is fragmented among many intermediaries.
+• Data is fragmented among many intermediaries."
 
-###2. Blockchain solution principles
+***2. Blockchain solution principles***
 
 Each product is associated with a unique ID.
 
@@ -26,9 +26,9 @@ All activities (creation, movement, transfer, status change) are recorded as eve
 
 Records are stored on the blockchain, public and immutable.
 
-###3. Solution architecture
-###4. Smart contract code (Solidity)
-###5. User Interface and Practical Applications
+***3. Solution architecture***
+***4. Smart contract code (Solidity)***
+***5. User Interface and Practical Applications***
 
 Product Management Page (Portal)
 
