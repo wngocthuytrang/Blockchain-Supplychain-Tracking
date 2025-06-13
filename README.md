@@ -12,47 +12,48 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 &emsp;• Counterfeit goods penetrate the market easily.
   
-  • Manual, outdated inspection process.
+&emsp;• Manual, outdated inspection process.
   
-  • Lack of clear ownership verification tools.
+&emsp;• Lack of clear ownership verification tools.
   
-  • Data is fragmented among many intermediaries.
+&emsp;• Data is fragmented among many intermediaries.
 
 ***2. Blockchain solution principles***
 
-Each product is associated with a unique ID.
+&emsp;• Each product is associated with a unique ID.
 
-All activities (creation, movement, transfer, status change) are recorded as events.
+&emsp;• All activities (creation, movement, transfer, status change) are recorded as events.
 
-Records are stored on the blockchain, public and immutable.
+&emsp;• Records are stored on the blockchain, public and immutable.
 
 ***3. Solution architecture***
 ***4. Smart contract code (Solidity)***
 ***5. User Interface and Practical Applications***
 
-Product Management Page (Portal)
+&emsp;• Product Management Page (Portal)
 
-Map displaying the journey (Map)
+&emsp;• Map displaying the journey (Map)
 
-Product inspection tool using QR code
+&emsp;• Product inspection tool using QR code
 
-Easy integration with ERP, IoT sensors
+&emsp;• Easy integration with ERP, IoT sensors
 
 ***6. Technology and Tools***
 
-Solidity, Ethereum, Web3.js/Ethers.js
+&emsp;• Solidity, Ethereum, Web3.js/Ethers.js
 
-React, IPFS, QR Code API
+&emsp;• React, IPFS, QR Code API
 
-Truffle or Hardhat for contract compilation and deployment
+&emsp;• Truffle or Hardhat for contract compilation and deployment
 
 ***7. Other application areas***
 
-Vaccine and medical drug tracking
+&emsp;• Vaccine and medical drug tracking
 
-Branded product authentication, high-end products
+&emsp;• Branded product authentication, high-end products
 
 Electronic device management, warranty lifecycle
+
 ##Conclusion
 
 Blockchain technology offers a breakthrough solution to the problem of supply chain transparency. Instead of relying on trust between parties, the system will be built on immutable records, allowing verification and auditing at any time.
