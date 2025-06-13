@@ -1,13 +1,14 @@
-# Blockchain in Supply Chain Transparency (H1)
+# Blockchain in Supply Chain Transparency
 
-Introduction
+## Introduction
 
 In the era of globalization, supply chains play a pivotal role in the transportation of goods between countries and regions. However, traditional supply chain systems are facing many problems such as counterfeiting, lack of transparency, and lack of traceability. This is especially serious in industries such as healthcare, food, and fashion.
 
 Blockchain – a distributed ledger technology, with immutable and transparent characteristics – has become a promising solution to solve the above problems. By recording every event in the product transportation process on the blockchain, stakeholders can verify the entire history of a product, from the place of production to the consumer.
-Contents
 
-1. Problems in traditional supply chains
+## Contents
+
+###1. Problems in traditional supply chains
 
 Counterfeit goods penetrate the market easily.
 
@@ -17,7 +18,7 @@ Lack of clear ownership verification tools.
 
 Data is fragmented among many intermediaries.
 
-2. Blockchain solution principles
+###2. Blockchain solution principles
 
 Each product is associated with a unique ID.
 
@@ -25,9 +26,9 @@ All activities (creation, movement, transfer, status change) are recorded as eve
 
 Records are stored on the blockchain, public and immutable.
 
-3. Solution architecture
-4. Smart contract code (Solidity)
-5. User Interface and Practical Applications
+###3. Solution architecture
+###4. Smart contract code (Solidity)
+###5. User Interface and Practical Applications
 
 Product Management Page (Portal)
 
@@ -37,7 +38,7 @@ Product inspection tool using QR code
 
 Easy integration with ERP, IoT sensors
 
-6. Technology and Tools
+###6. Technology and Tools
 
 Solidity, Ethereum, Web3.js/Ethers.js
 
@@ -45,14 +46,14 @@ React, IPFS, QR Code API
 
 Truffle or Hardhat for contract compilation and deployment
 
-7. Other application areas
+###7. Other application areas
 
 Vaccine and medical drug tracking
 
 Branded product authentication, high-end products
 
 Electronic device management, warranty lifecycle
-Conclusion
+##Conclusion
 
 Blockchain technology offers a breakthrough solution to the problem of supply chain transparency. Instead of relying on trust between parties, the system will be built on immutable records, allowing verification and auditing at any time.
 
