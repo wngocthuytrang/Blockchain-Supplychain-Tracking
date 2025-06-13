@@ -10,7 +10,7 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 
 ***1. Problems in traditional supply chains***
 
-  • Counterfeit goods penetrate the market easily.
+&emsp;• Counterfeit goods penetrate the market easily.
   
   • Manual, outdated inspection process.
   
