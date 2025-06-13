@@ -27,7 +27,7 @@ Records are stored on the blockchain, public and immutable.
 
 3. Solution architecture
 4. Smart contract code (Solidity)
-5. 5. User Interface and Practical Applications
+5. User Interface and Practical Applications
 
 Product Management Page (Portal)
 
