@@ -27,6 +27,7 @@ Blockchain – a distributed ledger technology, with immutable and transparent c
 &emsp;• Records are stored on the blockchain, public and immutable.
 
 ***3. Solution architecture***
+![bfcdeaed-2123-43a6-abca-46a363ca8b8a](https://github.com/user-attachments/assets/6374ed2f-fb51-4348-bd08-c71a3b7176e2)
 ***4. Smart contract code (Solidity)***
 
 ```solidity
